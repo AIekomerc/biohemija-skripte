@@ -1,121 +1,64 @@
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-
-  button {
-    background-color: #1e1e1e;
-    border-color: #90caf9;
-    color: #90caf9;
-  }
-
-  button:hover {
-    background-color: #90caf9;
-    color: #1e1e1e;
-  }
-
-  .resource {
-    background-color: #1e1e1e;
-    border-left-color: #90caf9;
-  }
- @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-
-  button {
-    background-color: #1e1e1e;
-    border-color: #90caf9;
-    color: #90caf9;
-  }
-
-  button:hover {
-    background-color: #90caf9;
-    color: #1e1e1e;
-  }
-
-  .resource {
-    background-color: #1e1e1e;
-    border-left-color: #90caf9;
-  }
-
-.resource {
-  background-color: #f9f9f9;
-  border-left: 4px solid #4CAF50;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 6px;
-  animation: fadeInUp 0.6s ease forwards;
-  opacity: 0;
-  transform: translateY(10px);
+/* Define CSS variables for reusability */
+:root {
+  --primary-color: #4CAF50;
+  --primary-dark: #90caf9;
+  --background-light: #ffffff;
+  --background-dark: #121212;
+  --text-light: #333;
+  --text-dark: #e0e0e0;
+  --button-bg-light: #ffffff;
+  --button-bg-dark: #1e1e1e;
+  --header-bg-light: #cce5ff;
+  --header-bg-dark: #1e3a8a;
+  --subject-bg-light: #e6ffe6;
+  --subject-bg-dark: #2a2a2a;
+  --database-bg-light: #fff3cd;
+  --database-bg-dark: #3c2f2f;
+  --input-border: #007bff;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}button {
-  background-color: #ffffff;
-  border: 2px solid #4CAF50;
-  color: #4CAF50;
-  padding: 10px 16px;
-  margin: 6px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-button:hover {
-  background-color: #4CAF50;
-  color: white;
-  transform: scale(1.05);
-}/* Osnovni stil */
+/* Base styles */
 body {
-  background-color: #ffffff;
+  background-color: var(--background-light);
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: var(--text-light);
 }
 
-/* Zaglavlje */
+/* Header */
 header {
-  background-color: #cce5ff;
+  background-color: var(--header-bg-light);
   padding: 20px;
   text-align: center;
   color: #004085;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow);
 }
 
-/* Glavni kontejner */
+/* Main container */
 .container {
   padding: 20px;
   max-width: 960px;
   margin: auto;
 }
 
-/* Pretraga */
+/* Search input */
 input[type="text"] {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
-  border: 2px solid #007bff;
+  border: 2px solid var(--input-border);
   border-radius: 8px;
   font-size: 16px;
 }
 
-/* Filter dugmad */
+/* Filter buttons */
 .filters {
   margin-bottom: 20px;
 }
 .filters button {
-  background-color: #28a745;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   padding: 10px 16px;
@@ -129,17 +72,55 @@ input[type="text"] {
   background-color: #218838;
 }
 
-/* Predmeti */
-.subject {
-  background-color: #e6ffe6;
+/* Resource */
+.resource {
+  background-color: #f9f9f9;
+  border-left: 4px solid var(--primary-color);
+  padding: 10px;
   margin: 10px 0;
-  padding: 12px;
-  border-left: 6px solid #28a745;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
 }
 
-/* Skripte unutar predmeta */
+/* Animation keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button */
+button {
+  background-color: var(--button-bg-light);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+button:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Subjects */
+.subject {
+  background-color: var(--subject-bg-light);
+  margin: 10px 0;
+  padding: 12px;
+  border-left: 6px solid var(--primary-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
 .subject ul {
   margin-top: 8px;
   padding-left: 20px;
@@ -148,30 +129,108 @@ input[type="text"] {
   margin-bottom: 6px;
 }
 
-/* Baze podataka */
+/* Databases */
 .database {
-  background-color: #fff3cd;
+  background-color: var(--database-bg-light);
   margin: 10px 0;
   padding: 12px;
   border-left: 6px solid #ffc107;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Linkovi */
+/* Links */
 a {
-  color: #007bff;
+  color: var(--input-border);
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
 }
 
-/* Mobilna prilagodljivost */
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+  }
+
+  header {
+    background-color: var(--header-bg-dark);
+    color: var(--text-dark);
+  }
+
+  .container {
+    background-color: var(--background-dark);
+  }
+
+  input[type="text"] {
+    background-color: var(--button-bg-dark);
+    color: var(--text-dark);
+    border-color: var(--primary-dark);
+  }
+
+  .filters button {
+    background-color: var(--primary-dark);
+    color: var(--button-bg-dark);
+  }
+  .filters button:hover {
+    background-color: #42a5f5;
+  }
+
+  button {
+    background-color: var(--button-bg-dark);
+    border-color: var(--primary-dark);
+    color: var(--primary-dark);
+    box-shadow: var(--shadow);
+  }
+  button:hover {
+    background-color: var(--primary-dark);
+    color: var(--button-bg-dark);
+    transform: scale(1.05);
+  }
+
+  .resource {
+    background-color: var(--button-bg-dark);
+    border-left-color: var(--primary-dark);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+  }
+
+  .subject {
+    background-color: var(--subject-bg-dark);
+    border-left-color: var(--primary-dark);
+  }
+
+  .database {
+    background-color: var(--database-bg-dark);
+    border-left-color: #ffca28;
+  }
+
+  a {
+    color: var(--primary-dark);
+  }
+}
+
+/* Mobile responsiveness */
 @media (max-width: 600px) {
   .filters button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
   }
 }
