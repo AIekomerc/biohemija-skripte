@@ -1,0 +1,44 @@
+{
+  "Neorganska hemija": [
+    {
+      "label": "📄 Skripta PDF",
+      "link": "https://www.academia.edu/123456/neorganska_hemija_skripta"
+    },
+    {
+      "label": "🎥 Video tutorijal",
+      "link": "https://www.youtube.com/watch?v=neorganska1"
+    },
+    {
+      "label": "🔍 Google Scholar",
+      "link": "https://scholar.google.com/scholar?q=neorganska+hemija"
+    }
+  ],
+  "Biohemija proteina i nukleinskih kiselina": [
+    {
+      "label": "📄 Skripta PDF",
+      "link": "https://www.academia.edu/123456/biohemija_proteina"
+    },
+    {
+      "label": "🎥 Video tutorijal",
+      "link": "https://www.youtube.com/watch?v=biohemija1"
+    },
+    {
+      "label": "🔍 Google Scholar",
+      "link": "https://scholar.google.com/scholar?q=biohemija+proteina"
+    }
+  ],
+  "Toksikološka biohemija": [
+    {
+      "label": "📄 Skripta PDF",
+      "link": "https://www.academia.edu/123456/toksikoloska_biohemija"
+    },
+    {
+      "label": "🎥 Video tutorijal",
+      "link": "https://www.youtube.com/watch?v=toksikoloska1"
+    },
+    {
+      "label": "🔍 Google Scholar",
+      "link": "https://scholar.google.com/scholar?q=toksikoloska+biohemija"
+    }
+  ]
+}

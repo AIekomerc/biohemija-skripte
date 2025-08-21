@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Biohemija Skripte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📘 Biohemija Skripte</h1>
+    <p>Interaktivna platforma za učenje biohemije</p>
+  </header>
+
+  <main class="container">
+    <input type="text" id="searchInput" placeholder="🔍 Pretraži predmet...">
+
+    <div class="filters">
+      <button onclick="filterSubjects('all')">Svi predmeti</button>
+      <button onclick="filterSubjects('obavezni')">Obavezni</button>
+      <button onclick="filterSubjects('izborni')">Izborni</button>
+    </div>
+
+    <section>
+      <h2>🎓 Predmeti</h2>
+      <div id="subjectsList"></div>
+    </section>
+
+    <section>
+      <h2>🔍 Baze podataka</h2>
+      <div class="database"><a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank">PubMed</a> – Naučne publikacije</div>
+      <div class="database"><a href="https://www.uniprot.org" target="_blank">Uniprot</a> – Proteomske baze</div>
+      <div class="database"><a href="https://www.rcsb.org" target="_blank">PDB</a> – Strukture proteina</div>
+      <div class="database"><a href="https://www.expasy.org" target="_blank">ExPASy</a> – Biohemijski alati</div>
+      <div class="database"><a href="https://www.biorxiv.org" target="_blank">BioRxiv</a> – Preprint radovi</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

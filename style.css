@@ -1,0 +1,100 @@
+/* Osnovni stil */
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Zaglavlje */
+header {
+  background-color: #cce5ff;
+  padding: 20px;
+  text-align: center;
+  color: #004085;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Glavni kontejner */
+.container {
+  padding: 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Pretraga */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Filter dugmad */
+.filters {
+  margin-bottom: 20px;
+}
+.filters button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+.filters button:hover {
+  background-color: #218838;
+}
+
+/* Predmeti */
+.subject {
+  background-color: #e6ffe6;
+  margin: 10px 0;
+  padding: 12px;
+  border-left: 6px solid #28a745;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Skripte unutar predmeta */
+.subject ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+.subject li {
+  margin-bottom: 6px;
+}
+
+/* Baze podataka */
+.database {
+  background-color: #fff3cd;
+  margin: 10px 0;
+  padding: 12px;
+  border-left: 6px solid #ffc107;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Linkovi */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobilna prilagodljivost */
+@media (max-width: 600px) {
+  .filters button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
