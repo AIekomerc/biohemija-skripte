@@ -7,66 +7,6 @@
     {
       "label": "🎥 Video tutorijal",
       "link": "https://www.youtube.com/watch?v=neorganska1"
-    }
-  ],
-  "Biohemija proteina i nukleinskih kiselina": [
-    {
-      "label": "📄 Skripta PDF",
-      "link": "https://www.academia.edu/123456/biohemija_proteina"
-    },
-    {
-      "label": "🎥 Video tutorijal",
-      "link": "https://www.youtube.com/watch?v=biohemija1"
-    }
-  ],
-  "Toksikološka biohemija": [
-    {
-      "label": "📄 Skripta PDF",
-      "link": "https://www.academia.edu/123456/toksikoloska_biohemija"
-    },
-    {
-      "label": "🎥 Video tutorijal",
-      "link": "https://www.youtube.com/watch?v=toksikoloska1"
-    }
-  ],
-  "Analitička hemija": [
-    {
-      "label": "📄 Skripta PDF",
-      "link": "https://www.academia.edu/123456/analiticka_hemija"
-    },
-    {
-      "label": "🎥 Video tutorijal",
-      "link": "https://www.youtube.com/watch?v=analiticka1"
-    }
-  ],
-  "Medicinska biohemija": [
-    {
-      "label": "📄 Skripta PDF",
-      "link": "https://www.academia.edu/123456/medicinska_biohemija"
-    },
-    {
-      "label": "🎥 Video tutorijal",
-      "link": "https://www.youtube.com/watch?v=medbio1"
-    }
-  ],
-  "Farmaceutska hemija": [
-    {
-      "label": "📄 Skripta PDF",
-      "link": "https://www.academia.edu/123456/farmaceutska_hemija"
-    },
-    {
-      "label": "🎥 Video tutorijal",
-      "link": "https://www.youtube.com/watch?v=farmhemija1"
-    }
-  ],,
-  "Neorganska hemija": [
-    {
-      "label": "📄 Skripta PDF",
-      "link": "https://www.academia.edu/123456/neorganska_hemija_skripta"
-    },
-    {
-      "label": "🎥 Video tutorijal",
-      "link": "https://www.youtube.com/watch?v=neorganska1"
     },
     {
       "label": "🔍 Google Scholar",
@@ -99,6 +39,36 @@
     {
       "label": "🔍 Google Scholar",
       "link": "https://scholar.google.com/scholar?q=toksikoloska+biohemija"
+    }
+  ],
+  "Analitička hemija": [
+    {
+      "label": "📄 Skripta PDF",
+      "link": "https://www.academia.edu/123456/analiticka_hemija"
+    },
+    {
+      "label": "🎥 Video tutorijal",
+      "link": "https://www.youtube.com/watch?v=analiticka1"
+    }
+  ],
+  "Medicinska biohemija": [
+    {
+      "label": "📄 Skripta PDF",
+      "link": "https://www.academia.edu/123456/medicinska_biohemija"
+    },
+    {
+      "label": "🎥 Video tutorijal",
+      "link": "https://www.youtube.com/watch?v=medbio1"
+    }
+  ],
+  "Farmaceutska hemija": [
+    {
+      "label": "📄 Skripta PDF",
+      "link": "https://www.academia.edu/123456/farmaceutska_hemija"
+    },
+    {
+      "label": "🎥 Video tutorijal",
+      "link": "https://www.youtube.com/watch?v=farmhemija1"
     }
   ]
 }
